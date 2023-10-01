@@ -30,7 +30,7 @@ function Done(props) {
               </button>{" "}
               <p>
                 {data.timestamp && (
-                  <span>Button clicked at: {data.timestamp}</span>
+                  <span>Moved to done:{data.timestamp}</span>
                 )}
               </p>{" "}
             </li>

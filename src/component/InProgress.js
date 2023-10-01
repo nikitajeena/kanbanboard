@@ -27,7 +27,7 @@ function Inprogress(props) {
               </button>{" "}
               <p>
                 {data.timestamp && (
-                  <span>Button clicked at: {data.timestamp}</span>
+                  <span>Moved to in-progress: {data.timestamp}</span>
                 )}
               </p>
             </li>

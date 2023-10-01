@@ -7,8 +7,8 @@ import "./style.css";
 function DisplayDashboard() {
   const [task, settask] = useState("");
   const [todos, setTodos] = useState([]);
-  const [buttonStatus, setButtonStatus] = useState(false);
-  const [timestamps, setTimestamp] = useState([]);
+  // const [buttonStatus, setButtonStatus] = useState(false);
+  // const [timestamps, setTimestamp] =np useState([]);
 
   // function handleInput(e) {
   //   settask(e.target.value);
@@ -49,7 +49,7 @@ function DisplayDashboard() {
 
   return (
     <div className="Dashboard">
-      <h1> Tasks Board </h1>
+      <h1 className="mainHeading"> Tasks Board </h1>
       <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => {
@@ -63,11 +63,11 @@ function DisplayDashboard() {
         <button className="inputTask" type="submit">Add</button>
       </form>
       <div className="taskListDisplay">
-        <div className="todoStatus">
+        <div className="todoStatus todoinprogress">
           <h2> TODO </h2>
           <Todo todos={todos} status="Todo" todoToinprogress={taskStatus} />
         </div>
-        <div className="todoStatus">
+        <div className="todoStatus todoinprogress">
           <h2> In-Progress Todos </h2>
           <Inprogress
             todos={todos}
@@ -75,7 +75,7 @@ function DisplayDashboard() {
             InprogresStateChange={taskStatus}
           />
         </div>
-        <div className="todoStatus">
+        <div className="todoStatus todoinprogress">
           <h2> Done </h2>
           <Done todos={todos} status="Done" taskDoneStatus={taskStatus} />
         </div>
