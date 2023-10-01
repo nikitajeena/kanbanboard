@@ -1,0 +1,109 @@
+*{
+    /* color: white */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:white;
+
+
+}
+
+:root {
+    --white: #ffffff;
+  }
+  
+.inputTask{
+    color: black;
+    border-color: var(--white);
+}
+
+h1{
+    text-align: center;
+}
+.App{
+    background-image: url('./cover.png');
+    height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Dashboard{
+}
+
+.taskListDisplay{
+    padding: 3rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+p{
+padding: 0rem 0rem 1rem 0rem;
+}
+span
+{  
+    font-size: 12px;
+    font-weight: 500;
+}
+
+form{
+
+    padding: 4rem 0rem 0rem 0rem ;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+div ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0rem 3rem 0rem 3rem;
+    margin: 0rem 3rem 0rem 3rem;
+    border: 0px var(--white);
+    color: black;
+
+
+
+}
+
+.todoStatus{
+    height: max-content;
+    width: 40rem;
+    /* background-color: aqua; */
+    text-align: center;
+
+}
+button{
+    height: 35px;
+    width: 100px;
+    border-radius: 4px;
+    color: black;
+    border: 0px var(--white);
+}
+
+
+li{
+    
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 1rem 1rem 1rem 1rem;
+    list-style: none;
+    border-radius: 6px;
+    width: max-content;
+    word-wrap: break-word;
+
+
+}
